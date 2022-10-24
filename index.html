@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <figure id="card" class="card card--normal">
+        <div class="card__image-container">
+          <img src="" alt="" class="card__image" id="card__image" height="150px" width="150px"/>
+        </div>
+
+        <figcaption class="card__caption">
+          <h1 id="card__name"></h1>
+
+          <h3 id="typeCard" class="card__type"></h3>
+
+          <table class="card__stats">
+            <tbody>
+              <tr>
+                <th id="hp">HP</th>
+                <td id="hpValue">55</td>
+              </tr>
+              <tr>
+                <th id="attack"></th>
+                <td id="attackValue"></td>
+              </tr>
+
+              <tr>
+                <th id="defense">Defense</th>
+                <td id="defenseValue">50</td>
+              </tr>
+
+              <tr>
+                <th id="specialAttack">Special Attack</th>
+                <td id="specialAttackValue">45</td>
+              </tr>
+              <tr>
+                <th id="specialDefense">Special Defense</th>
+                <td id="specialDefenseValue">65</td>
+              </tr>
+              <tr>
+                <th id="speed">Speed</th>
+                <td id="speedValue">55</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="card__abilities">
+            <h4 class="card__ability">
+              <span class="card__label">Ability</span>
+              <p id="ability"></p>
+            </h4>
+            <h4 class="card__ability">
+              <span class="card__label">Hidden Ability</span>
+              <p id="hiddenAbility"></p>
+            </h4>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="number_choice">
+      <label for="number_choice">Write a number between 1 and 905</label>
+      <input name="number_choice" id="number_choice" type="text" value="1" />
+    </div>
+    <div>
+      <a href="#" class="myButton" onclick="getInput()">SEND</a>
+    </div>
+    <h1 id="error"></h1>
+    <script src="script.js"></script>
+  </body>
+</html>
